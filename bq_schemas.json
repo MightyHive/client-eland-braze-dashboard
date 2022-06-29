@@ -1,0 +1,381 @@
+[
+  {
+    "channel": "all",
+    "id":  "elandmallbigquery.braze_campaigns.campaign_analytics",
+    "schema": [
+      {
+        "name": "date",
+        "type": "DATE",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "id",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "channel",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "original_name",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "utm_campaign_source",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "utm_campaign_medium",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "utm_campaign_name",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "variation_name",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "ios_push",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+          {
+            "name": "sent",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": ""
+          },
+          {
+            "name": "direct_opens",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": ""
+          },
+          {
+            "name": "total_opens",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": ""
+          },
+          {
+            "name": "bounces",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": ""
+          },
+          {
+            "name": "body_clicks",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": ""
+          }
+        ],
+        "description": "ios_push analytics"
+      },
+      {
+        "name": "android_push",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+          {
+            "name": "sent",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": ""
+          },
+          {
+            "name": "direct_opens",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": ""
+          },
+          {
+            "name": "total_opens",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": ""
+          },
+          {
+            "name": "bounces",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": ""
+          },
+          {
+            "name": "body_clicks",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": ""
+          }
+        ],
+        "description": "android_push analytics"
+      },
+      {
+        "name": "sent",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "impressions",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "clicks",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "first_button_clicks",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "second_button_clicks",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "opens",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "unique_opens",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "unique_clicks",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "delivered",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "conversions",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "conversions1",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "conversions2",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "conversions3",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "unique_recipients",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "revenue",
+        "type": "FLOAT",
+        "mode": "NULLABLE",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "channel": "push",
+    "id":  "elandmallbigquery.braze_campaigns.campaign_analytics_push",
+    "schema": [
+      {
+        "name": "date",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+  {
+    "name": "channel",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": ""
+  },
+  {
+    "name": "original_name",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": ""
+  },
+  {
+    "name": "utm_campaign_source",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": ""
+  },
+  {
+    "name": "utm_campaign_medium",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": ""
+  },
+  {
+    "name": "utm_campaign_name",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": ""
+  },
+  {
+    "name": "varation_name",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": ""
+  },
+  {
+    "name": "ios_push",
+    "type": "RECORD",
+    "mode": "NULLABLE",
+    "fields": [
+      {
+        "name": "sent",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "direct_opens",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "total_opens",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "bounces",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "body_clicks",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      }
+    ],
+    "description": "ios_push analytics"
+  },
+  {
+    "name": "android_push",
+    "type": "RECORD",
+    "mode": "NULLABLE",
+    "fields": [
+      {
+        "name": "sent",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "direct_opens",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "total_opens",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "bounces",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      },
+      {
+        "name": "body_clicks",
+        "type": "INTEGER",
+        "mode": "NULLABLE",
+        "description": ""
+      }
+    ],
+    "description": "android_push analytics"
+    },
+  {
+    "name": "conversions",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": ""
+  },
+  {
+    "name": "conversions1",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": ""
+  },
+  {
+    "name": "conversions2",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": ""
+  },
+  {
+    "name": "conversions3",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": ""
+  },
+  {
+    "name": "unique_recipients",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": ""
+  },
+  {
+    "name": "revenue",
+    "type": "INTEGER",
+    "mode": "NULLABLE",
+    "description": ""
+  }]
+  }
+]

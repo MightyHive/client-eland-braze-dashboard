@@ -1,1 +1,1 @@
-# clinet-eland-braze-dashboard
+# client-eland-braze-dashboard
